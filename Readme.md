@@ -1,7 +1,4 @@
-* Download the [RSocket Client CLI](https://github.com/making/rsc) by [Toshiaki Maki](https://github.com/making)  
-```
-wget -O rsc.jar https://github.com/making/rsc/releases/download/0.4.2/rsc-0.4.2.jar
-```   
+
 
 * Send Request-Response Command To The Server with The RSocket CLI  
 ```jvm
@@ -11,7 +8,7 @@ java -jar rsc.jar --debug --request --data "{\"origin\":\"Client\",\"interaction
 This command contains 3 parts:  
 - Interaction type ```- request``` means Request-Response
 - Data - ```--data "{\"origin\":\"Client\",\"interaction\":\"Request\"}"```
-- Route ```--route request-response``` which matches with the following annotation on com/intertuma/tutorial/rsocket/server/RsocketController.java
+- Route ```--route request-response``` which matches with the following annotation on com/saral/tutorial/rsocket/server/RsocketController.java
 ```
     @MessageMapping("request-response")
     Message requestResponse(final Message request) {
@@ -76,7 +73,7 @@ java -jar rsc.jar --debug --fnf --data "{\"origin\":\"Client\",\"interaction\":\
 This command contains 3 parts:  
 - Interaction type ```- fnf``` means Fire and Forget
 - Data - ```--data "{\"origin\":\"Client\",\"interaction\":\"Request\"}"```
-- Route ```--route fire-and-forget``` which matches with the following annotation on com/intertuma/tutorial/rsocket/server/RsocketController.java
+- Route ```--route fire-and-forget``` which matches with the following annotation on com/saral/tutorial/rsocket/server/RsocketController.java
 ```ignorelang
     @MessageMapping("fire-and-forget")
     public void fireAndForget(final Message request) {
@@ -118,7 +115,7 @@ java -jar rsc.jar --debug --stream --data "{\"origin\":\"Client\",\"interaction\
 This command contains 3 parts:  
 - Interaction type ```- stream``` means Stream
 - Data - ```--data "{\"origin\":\"Client\",\"interaction\":\"Request\"}"```
-- Route ```--route stream``` which matches with the following annotation on com/intertuma/tutorial/rsocket/server/RsocketController.java
+- Route ```--route stream``` which matches with the following annotation on com/saral/tutorial/rsocket/server/RsocketController.java
 ```ignorelang
     @MessageMapping("stream")
     Flux<Message> stream(final Message request) {

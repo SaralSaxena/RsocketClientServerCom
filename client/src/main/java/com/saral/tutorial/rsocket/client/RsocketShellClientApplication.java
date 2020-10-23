@@ -1,4 +1,4 @@
-package com.intertuma.tutorial.rsocket.client;
+package com.saral.tutorial.rsocket.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

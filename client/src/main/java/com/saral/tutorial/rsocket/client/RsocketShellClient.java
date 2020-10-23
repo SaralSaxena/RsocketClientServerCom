@@ -1,6 +1,6 @@
-package com.intertuma.tutorial.rsocket.client;
+package com.saral.tutorial.rsocket.client;
 
-import com.intertuma.tutorial.rsocket.api.Message;
+import com.saral.tutorial.rsocket.api.Message;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.rsocket.RSocketRequester;

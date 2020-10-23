@@ -1,6 +1,6 @@
-package com.intertuma.tutorial.rsocket.server;
+package com.saral.tutorial.rsocket.server;
 
-import com.intertuma.tutorial.rsocket.api.Message;
+import com.saral.tutorial.rsocket.api.Message;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.stereotype.Controller;

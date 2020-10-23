@@ -1,4 +1,4 @@
-package com.intertuma.tutorial.rsocket.api;
+package com.saral.tutorial.rsocket.api;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
